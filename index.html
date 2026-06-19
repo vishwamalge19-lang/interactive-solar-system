@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Solar System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>🚀 Interactive Solar System</h1>
+
+    <p class="subtitle">
+        Tap • Listen • Explore Space
+    </p>
+
+    <img src="images/solar-system.png"
+         alt="Solar System"
+         class="solar-image">
+
+    <!-- Welcome Button -->
+
+    <div style="margin-bottom:20px;">
+        <button onclick="playWelcome()"
+            style="background:#4CAF50;color:white;padding:12px 20px;border:none;border-radius:10px;font-size:16px;cursor:pointer;">
+            🚀 Welcome Message
+        </button>
+    </div>
+
+    <!-- Planet Buttons -->
+
+    <div class="planet-buttons">
+
+        <button onclick="playPlanet('sun')">☀️ Sun</button>
+        <button onclick="playPlanet('mercury')">☿ Mercury</button>
+        <button onclick="playPlanet('venus')">♀ Venus</button>
+        <button onclick="playPlanet('earth')">🌍 Earth</button>
+        <button onclick="playPlanet('mars')">♂ Mars</button>
+        <button onclick="playPlanet('jupiter')">♃ Jupiter</button>
+        <button onclick="playPlanet('saturn')">♄ Saturn</button>
+        <button onclick="playPlanet('uranus')">⛢ Uranus</button>
+        <button onclick="playPlanet('neptune')">♆ Neptune</button>
+
+    </div>
+
+    <!-- Thank You Button -->
+
+    <div style="margin-top:20px; margin-bottom:20px;">
+        <button onclick="playThankYou()"
+            style="background:#FF9800;color:white;padding:12px 20px;border:none;border-radius:10px;font-size:16px;cursor:pointer;">
+            🌟 Thank You Message
+        </button>
+    </div>
+
+    <!-- Info Box -->
+
+    <div id="planet-info">
+
+        <h2>🚀 Welcome Space Explorer!</h2>
+
+        <p>
+            Start with the Welcome Message or tap any planet to hear it introduce itself.
+        </p>
+
+        <p>
+            Created by Vishwa Malge | Class 2
+        </p>
+
+    </div>
+
+    <!-- Audio -->
+
+    <audio id="audio-player"></audio>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
