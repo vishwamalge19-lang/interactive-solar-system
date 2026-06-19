@@ -1,10 +1,18 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background: #0b1026;
     color: white;
     margin: 0;
     padding: 20px;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.15) 2px, transparent 3px),
+        radial-gradient(circle at 80% 30%, rgba(255,255,255,0.12) 2px, transparent 3px),
+        radial-gradient(circle at 40% 70%, rgba(255,255,255,0.12) 2px, transparent 3px),
+        radial-gradient(circle at 70% 80%, rgba(255,255,255,0.15) 2px, transparent 3px),
+        linear-gradient(to bottom, #000814, #001d3d, #000814);
+
+    background-size: 300px 300px, 400px 400px, 500px 500px, 350px 350px, cover;
 }
 
 h1 {
